@@ -3,22 +3,35 @@
 <head>
 <title>WEB1 - Welcome</title>
 <meta charset="utf-8">
+<link rel="stylesheet" href="style.css"
 </head>
 <h1><a href="index.html">WEB</a> </h1>
+<input id="night_day" type="button" value="night" onclick="
+  if(document.querySelector('#night_day').value === 'night'){
+    document. querySelector('body').style.backgroundColor  = 'black';
+    document. querySelector('body').style.color  = 'white';
+    document.querySelector('#night_day').value = 'day';
+}  else {
+  document. querySelector('body').style.backgroundColor  = 'white';
+  document. querySelector('body').style.color  = 'black';
+  document.querySelector('#night_day').value = 'night';
+}
+">
+<div id="grid">
 <body>
 <ol>
   <li><a href="1.html">HTML</a> </li>
   <li><a href="2.html">CSS</a> </li>
   <li><a href="3.html">JavaScript</a> </li>
 </ol>
-<p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/LVLHprUg-PM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
+<div id="article">
  <h2>WEB</h2>
    <p>
      The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as https://example.com/), which may be interlinked by hyperlinks, and are accessible over the Internet.[1][2] The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users by a software application called a web browser, and are published by a software application called a web server. The World Wide Web is not synonymous with the Internet, which pre-dated the Web in some form by over two decades and upon which technologies the Web is built.
 
 English scientist Sir Timothy Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser in 1990 while employed at CERN near Geneva, Switzerland.[3][4] The browser was released outside CERN to other research institutions starting in January 1991, and then to the general public in August 1991.
      </p>
+     </div>
+ </div>
 </body>
 </html>
